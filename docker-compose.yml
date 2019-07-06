@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    image: nginx:1.12
+    ports:
+      - "80:80"
+    volumes:
+      - ./samplephpwebsite:/var/www/samplephpwebsite
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    links: 
+      - php
+    depends_on:
+      - php
+  php:
+    build: .
+    volumes:
+      - ./samplephpwebsite:/var/www/samplephpwebsite
