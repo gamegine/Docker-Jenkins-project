@@ -13,6 +13,6 @@ services:
     depends_on:
       - php
   php:
-    image: php:fpm
+    build: .
     volumes:
       - ./samplephpwebsite:/var/www/samplephpwebsite
