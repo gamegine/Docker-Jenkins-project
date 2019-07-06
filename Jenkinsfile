@@ -16,7 +16,7 @@ node {
 		app.inside {
 			/* install app  */
 			sh 'ls -la'
-			sh 'phpunit /var/www/samplephpwebsite/PHPUnit.php'
+			sh 'phpunit samplephpwebsite/PHPUnit.php'
 		}
 	}
 /*
