@@ -1,4 +1,4 @@
-From php:fpm
+FROM php:fpm
 WORKDIR /var/www/samplephpwebsite
 RUN apt-get update && apt-get install wget -y
 # install phpunit
