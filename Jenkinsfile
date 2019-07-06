@@ -9,7 +9,7 @@ node {
 	stage('Build image') {
 		/* Builds the actual image; synonymous to
 		 * docker build on the command line */
-		app = docker.build('samplephpwebsite')
+		app = docker.build('gamegine/samplephpwebsite')
 	}
 
 	stage('test') {
