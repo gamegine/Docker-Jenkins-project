@@ -15,7 +15,8 @@ node {
 	stage('test') {
 		app.inside {
 			/* install app  */
-			sh 'phpunit PHPUnit.php'
+			sh 'ls -la'
+			sh 'phpunit /var/www/samplephpwebsite/PHPUnit.php'
 		}
 	}
 /*
