@@ -14,4 +14,8 @@ class StackTest extends PHPUnit\Framework\TestCase
         $this->expectOutputString(config('name'));
         $result = siteName();
     }
+    public function testcheckRequiredVersions()
+    {
+        $this->expectOutputString(ccheckRequiredVersions());
+    }
 }
