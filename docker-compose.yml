@@ -23,5 +23,7 @@ services:
   mariadb:
     image: mariadb:10.1
     environment:
+      MYSQL_DATABASE: db
       MYSQL_USER: php_user
       MYSQL_PASSWORD: sdrugntqqsciur
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
