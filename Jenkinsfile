@@ -27,8 +27,8 @@ node {
 			 * First, the incremental build number from Jenkins
 			 * Second, the 'latest' tag.
 			 * Pushing multiple tags is cheap, as all the layers are reused. */
-			app.push("v1-${env.BUILD_NUMBER}")
-			app.push("v1-latest")
+			app.push("v3-${env.BUILD_NUMBER}")
+			app.push("v3-latest")
 		}
 	}
 }
