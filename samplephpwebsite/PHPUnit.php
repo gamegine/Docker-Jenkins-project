@@ -16,6 +16,6 @@ class StackTest extends PHPUnit\Framework\TestCase
     }
     public function testcheckRequiredVersions()
     {
-        $this->expectOutputString(ccheckRequiredVersions());
+        $this->expectOutputString(checkRequiredVersions());
     }
 }
