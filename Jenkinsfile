@@ -19,20 +19,17 @@ node {
 			sh 'phpunit samplephpwebsite/PHPUnit.php'
 		}
 	}
-/*
+
 
 	stage('Push image') {
 		/* Login docker.io with the hidden credentials in docker-hub-credentials'*/
-/*
 		docker.withRegistry('https://registry-1.docker.io/v2', 'docker-hub-credentials') {
 			/* Finally, we'll push the image with two tags:
 			 * First, the incremental build number from Jenkins
 			 * Second, the 'latest' tag.
 			 * Pushing multiple tags is cheap, as all the layers are reused. */
-/*
 			app.push("v1-${env.BUILD_NUMBER}")
 			app.push("v1-latest")
 		}
 	}
-*/
 }
