@@ -1,4 +1,3 @@
-
 # Docker-Jenkins-project
 ##  :book: description
 
@@ -43,6 +42,7 @@ Bonus :
 
 ##  :hammer: builds
 ### avec Docker
+selectioner la branch
 lancer le script "start.sh" avec les droits docker
 ### avec Jenkins
 Lancer un container Jenkins lier au binaires du docker.
@@ -67,7 +67,7 @@ Dans le container Jenkins installer Docker client pour pouvoir realiser du Docke
     apt-get update && \
     apt-get -y install docker-ce
     chown root:jenkins /run/docker.sock # autorisations docker a jenkins
-dans jenkins, créer un nouveau job sur lequelle sera present la pipeline. Dans la configuration de la pipeline preciser le lien du repo git.
+dans jenkins, créer un nouveau job sur lequelle sera present la pipeline. Dans la configuration de la pipeline preciser le lien du repo git et la branch.
 # :calling: Publication
 - [github](https://github.com/gamegine/Docker-Jenkins-project)
 ## :package: dependencies
